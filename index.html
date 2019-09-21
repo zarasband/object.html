@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZARAS</title>
+
+</head>
+
+<body>
+    <p id="sum">Sum</p>
+    NUM 1 : <input type="number" id="num1" />
+    <br/> NUM 1 : <input type="number" id="num2" />
+    <br/>
+    <input type="button" value="SUM" onclick="sum()" />
+
+    <script>
+        //  <!--آرایه-->
+        var Nane = ["Samir", "Farshad", "Peransa"];
+        var Nane1 = Nane.sort();
+        document.write(Nane[1] + "<br/>");
+        console.log(Nane1.length);
+        var lbl = document.getElementById("sum");
+
+        function sum() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var sum = num1 + num2;
+            lbl.innerHTML = sum;
+        }
+    </script>
+
+
+</body>
+
+<script src="JavaScripts/MyCodeJavaScript.js"></script>
+
+</html>
